@@ -1,7 +1,7 @@
 {
     "name": "edition",
     "description": "A clean, minimal newsletter theme for the Ghost publishing platform",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
@@ -45,7 +45,11 @@
         "test": "gscan .",
         "test:ci": "gscan --fatal --verbose .",
         "lint": "gulp lint",
-        "zip": "gulp zip"
+        "zip": "gulp zip",
+        "release": "standard-version",
+        "release:patch": "standard-version --release-as patch",
+        "release:minor": "standard-version --release-as minor",
+        "release:major": "standard-version --release-as major"
     },
     "devDependencies": {
         "autoprefixer": "10.2.5",
@@ -62,6 +66,7 @@
         "postcss": "8.2.15",
         "postcss-easy-import": "3.0.0",
         "pump": "^3.0.0",
+        "standard-version": "^9.3.0",
         "stylelint": "13.13.1",
         "stylelint-config-standard": "22.0.0",
         "stylelint-order": "4.1.0"
