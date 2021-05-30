@@ -2,8 +2,12 @@
 
 <div class="content-area">
     <main id="site-main" class="site-main outer" role="main">
-        {{#post}}
-            <div class="inner">
+    {{#post}}
+     <header class="single-header kg-canvas">
+          <h1 class="single-title">{{title}}</h1>
+        </header>
+            {{/post}}
+            <div class="single-content kg-canvas">
                 {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
                     {{#foreach tags}}
                         <a href='{{ url }}'>
@@ -12,7 +16,6 @@
                     {{/foreach}}
                 {{/get}}
             </div>
-        {{/post}}
     </main>
 </div>
 
