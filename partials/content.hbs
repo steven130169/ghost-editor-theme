@@ -17,6 +17,9 @@
                         <a class="post-tag post-tag-{{slug}}" href="{{url}}">{{name}}</a>
                     </span>
                 {{/primary_tag}}
+                <span class="single-meta-item">
+                <a href="{{url absolute=”true”}}#disqus_thread" data-disqus-identifier="{{post.id}}"></a>
+                    </span>
             </div>
         {{/is}}
 
@@ -31,7 +34,8 @@
         {{#if feature_image}}
             {{#unless no_image}}
                 <div class="single-media kg-width-{{width}}">
-                    <img srcset="{{> srcset}}" sizes="(min-width: 1023px) 920px, calc(90vw)" src="{{img_url feature_image size="l"}}" alt="{{title}}">
+                    <img srcset="{{> srcset}}" sizes="(min-width: 1023px) 920px, calc(90vw)"
+                         src="{{img_url feature_image size="l"}}" alt="{{title}}">
                 </div>
             {{/unless}}
         {{/if}}
@@ -60,7 +64,8 @@
                         {{#foreach authors}}
                             <div class="author-image-placeholder u-placeholder square">
                                 <a href="{{url}}" title="{{name}}">
-                                    <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy">
+                                    <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}"
+                                         alt="{{name}}" loading="lazy">
                                 </a>
                             </div>
                         {{/foreach}}
@@ -70,17 +75,15 @@
                 <div class="single-footer-bottom">
                     <div class="share">
                         <a class="share-link share-link-facebook"
-                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
-                            target="_blank" rel="noopener noreferrer">
-                            {{> icons/facebook}}
-                            Share
-                        </a>
+                           href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
+                        target="_blank" rel="noopener noreferrer">
+                        {{> icons/facebook}}
+                        Share
                         <a class="share-link share-link-twitter"
-                            href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
-                            target="_blank" rel="noopener noreferrer">
-                            {{> icons/twitter}}
-                            Tweet
-                        </a>
+                           href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
+                        target="_blank" rel="noopener noreferrer">
+                        {{> icons/twitter}}
+                        Tweet
                     </div>
                 </div>
             </div>
