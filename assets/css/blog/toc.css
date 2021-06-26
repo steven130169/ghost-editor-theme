@@ -3,7 +3,7 @@
 }
 
 .toc-container .toc {
-    position: sticky;
+    /* position: sticky; */
     top: 70px;
     padding: 0 0.8em;
     min-width: 260px;
