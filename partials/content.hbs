@@ -40,10 +40,16 @@
             {{/unless}}
         {{/if}}
     </header>
+    <div class="single-grid">
+        <aside class="toc-container">
+            <div class="toc"></div>
+        </aside>
+        <div class="single-content kg-canvas u-text-format">
+            {{content}}
+        </div>
 
-    <div class="single-content kg-canvas u-text-format">
-        {{content}}
     </div>
+
 
     {{#is "post"}}
         <footer class="single-footer container small">
@@ -74,8 +80,12 @@
 
                 <div class="single-footer-bottom">
                     <div class="share">
-                        <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}" target="_blank" rel="noopener noreferrer"> {{> icons/facebook}} Share </a>
-                        <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}" target="_blank" rel="noopener noreferrer"> {{> icons/twitter}} Tweet </a>
+                        <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u={{url
+                            absolute="true"}}" target="_blank" rel="noopener noreferrer"> {{> icons/facebook}}
+                        Share </a>
+                        <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url={{url
+                            absolute="true"}}&text={{encode title}}" target="_blank" rel="noopener
+                        noreferrer"> {{> icons/twitter}} Tweet </a>
                     </div>
                 </div>
             </div>
