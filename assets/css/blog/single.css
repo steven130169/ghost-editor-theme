@@ -114,3 +114,22 @@
         margin-top: 3rem;
     }
 }
+
+/* This is for toc */
+
+.single-content h2,
+.single-content h3 {
+    /* outline: none; */
+}
+
+body {
+    /* overflow: visible; */
+}
+
+.single-grid {
+    /* display: grid; */
+
+    /* padding: 0 0 6vw; */
+
+    /* grid-template-columns: 1fr 0.2fr; */
+}
