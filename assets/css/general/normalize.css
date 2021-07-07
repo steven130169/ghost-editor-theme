@@ -49,6 +49,21 @@ samp {
     font-size: 1em;
 }
 
+kbd {
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.1em 0.6em;
+    border: 1px solid #9fa6ad;
+    color: #242729;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+    background-color: #e4e6e8;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #0c0d0e26, inset 0 1px 0 0 #fff;
+}
+
 small {
     font-size: 80%;
 }
